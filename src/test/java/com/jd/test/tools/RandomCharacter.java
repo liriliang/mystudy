@@ -24,10 +24,18 @@ public class RandomCharacter extends RandomChar {
 			'{', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', ' ' };
 	private int spe;
 
+	/**
+	 ** 构造函数，默认字符集
+	 */
 	public RandomCharacter() {
 		this(false);
 	}
 
+	/**
+	 ** 构造函数，设置是否从配置文件读取字符集
+	 *
+	 * @param fromFile 是否来自配置文件
+	 */
 	public RandomCharacter(boolean fromFile) {
 		if (fromFile) {
 			File file = new File("src/main/resources/chars.properties");
