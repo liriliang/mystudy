@@ -1,4 +1,4 @@
-package com.jd.test.tools;
+package com.jd.tools;
 
 public class AddChars implements Runnable {
 
